@@ -58,7 +58,7 @@ class _BodyState extends State<Body> {
                   'Sign in to your account',
                   style: TextStyle(
                     fontSize: 18,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w700,
                     color: colorCitrus,
                   ),
                 ),

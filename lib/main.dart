@@ -5,6 +5,7 @@ import 'package:flutter_huntd_demo/providers/user_provider.dart';
 import 'package:flutter_huntd_demo/screens/Home/home_screen.dart';
 import 'package:flutter_huntd_demo/screens/Login/login_screen.dart';
 import 'package:flutter_huntd_demo/services/user_service.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 void main() => runApp(HuntdApp());
@@ -20,7 +21,12 @@ class HuntdApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Huntd App Demo',
-        theme: ThemeData(scaffoldBackgroundColor: colorBackground),
+        theme: ThemeData(
+          scaffoldBackgroundColor: colorBackground,
+          textTheme: GoogleFonts.ibmPlexMonoTextTheme(
+            Theme.of(context).textTheme,
+          ),
+        ),
         home: FutureBuilder(
           future: UserService().getUser(),
           builder: (context, snapshot) {
