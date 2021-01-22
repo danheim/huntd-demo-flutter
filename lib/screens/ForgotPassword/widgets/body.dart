@@ -18,7 +18,7 @@ class ForgotPasswordBody extends StatelessWidget {
               SizedBox(height: 16),
               GestureDetector(
                 onTap: () {
-                  Navigator.pushReplacementNamed(context, '/login');
+                  Navigator.pop(context, '/login');
                 },
                 child: Text(
                   'Back to login page',

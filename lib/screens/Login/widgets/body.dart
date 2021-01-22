@@ -4,6 +4,7 @@ import 'package:flutter_huntd_demo/constants.dart';
 import 'package:flutter_huntd_demo/models/user.dart';
 import 'package:flutter_huntd_demo/providers/auth_provider.dart';
 import 'package:flutter_huntd_demo/providers/user_provider.dart';
+import 'package:flutter_huntd_demo/screens/ForgotPassword/forgot_password_screen.dart';
 import 'package:flutter_huntd_demo/widgets/button.dart';
 import 'package:flutter_huntd_demo/widgets/input_field.dart';
 import 'package:provider/provider.dart';
@@ -83,7 +84,12 @@ class _LoginBodyState extends State<LoginBody> {
                 SizedBox(height: 16),
                 GestureDetector(
                   onTap: () {
-                    Navigator.pushReplacementNamed(context, '/forgotPassword');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ForgotPasswordScreen(),
+                      ),
+                    );
                   },
                   child: Text(
                     'Forgot password',
