@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_huntd_demo/constants.dart';
 import 'package:flutter_huntd_demo/providers/auth_provider.dart';
 import 'package:flutter_huntd_demo/providers/user_provider.dart';
+import 'package:flutter_huntd_demo/screens/ForgotPassword/forgot_password_screen.dart';
 import 'package:flutter_huntd_demo/screens/Home/home_screen.dart';
 import 'package:flutter_huntd_demo/screens/Login/login_screen.dart';
 import 'package:flutter_huntd_demo/services/user_service.dart';
@@ -43,6 +44,7 @@ class HuntdApp extends StatelessWidget {
         routes: {
           '/home': (_) => HomeScreen(),
           '/login': (_) => LoginScreen(),
+          '/forgotPassword': (_) => ForgotPasswordScreen(),
         },
       ),
     );

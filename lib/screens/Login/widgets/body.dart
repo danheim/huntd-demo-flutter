@@ -8,12 +8,12 @@ import 'package:flutter_huntd_demo/widgets/button.dart';
 import 'package:flutter_huntd_demo/widgets/input_field.dart';
 import 'package:provider/provider.dart';
 
-class Body extends StatefulWidget {
+class LoginBody extends StatefulWidget {
   @override
-  _BodyState createState() => _BodyState();
+  _LoginBodyState createState() => _LoginBodyState();
 }
 
-class _BodyState extends State<Body> {
+class _LoginBodyState extends State<LoginBody> {
   final formKey = new GlobalKey<FormState>();
   String _email = '', _password = '';
 
@@ -82,7 +82,9 @@ class _BodyState extends State<Body> {
                 ),
                 SizedBox(height: 16),
                 GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushReplacementNamed(context, '/forgotPassword');
+                  },
                   child: Text(
                     'Forgot password',
                     style: TextStyle(color: colorCitrus, fontSize: 14),
