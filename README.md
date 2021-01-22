@@ -1,16 +1,18 @@
-# flutter_huntd_demo
+# Huntd Demo
 
-Huntd Demo
+The goal was to build a demo application with a basic login screen.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a Flutter application, contains:
+- Login screen
+- Forgot password screen (UI)
+- Home screen, consists of: `Chat page` and `Profile page`.
 
-A few resources to get you started if this is your first Flutter project:
+You can log in to your account. Sign up credentials are hardcoded, for now.
+After you are logged in, you can switch between two pages, and log out if you want.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Packages used:
+- Provider (manage state globally): `AuthProvider`, `UserProvider`
+- Google fonts
+- Shared Preferences (store user data): `UserService`
