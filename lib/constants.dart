@@ -5,6 +5,3 @@ const colorBackground = Color(0xFFFDFBFB);
 const colorGray = Color(0xFF726E6C);
 const colorDarkGray = Color(0xFF726E6C);
 const colorLightGray = Color(0xFFD1CCC9);
-
-const kPrimaryColor = Color(0xFF6F35A5);
-const kPrimaryLightColor = Color(0xFFF1E6FF);
